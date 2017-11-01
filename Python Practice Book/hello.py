@@ -97,7 +97,16 @@ def unique2(l,f):
 	if not(f(k) in x):
 	    x.append(k)
 
-print x
+     print x
 
 
 unique2(["python", "Clojure", "Python", "clojure"], lambda s: s.lower())
+
+
+def unique_using_set(l):
+    k = set([])
+    for x in l:
+        k.add(x)
+    print k
+
+unique_using_set([1,2,1,2])
